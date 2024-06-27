@@ -1,11 +1,10 @@
-
+#imports needed modules
 from requests import post
-from time import sleep
 import colorama
 
 #returns input given by the user
 email=str(input("Enter your email : "))
-passwrd=str(input("Enter your password : \n"))
+passwrd=str(input("Enter your password : "))
 
 #url: request URL (API)
 #payload: request payload (JSON)
@@ -31,4 +30,4 @@ def Send_request(request_url : str ,request_payload : any):
 
 #runs the function
 if __name__=="__main__":
-    Send_request(url,payload)
+    print(Send_request(url,payload))
